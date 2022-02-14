@@ -11,5 +11,5 @@ int main()
 	z1 = pow(cos((3*PI/8)-(alp/4)),2) - pow(cos((11*PI/8)+(alp/4)),2);
 	z2 = (sqrt(2)/2)*sin(alp/2);
 	printf("%.2f\n%.2f", z1,z2);
-	return 0;
+	return 0; //
 }
