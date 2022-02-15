@@ -8,8 +8,8 @@ int main()
     int pows, abss, res = 0;
     printf("Enter two int numbers:\n");
     scanf("%d %d", &a, &b);
-    pows = (pow(a, 2) + pow(b, 2)) / 2;
-    abss = (abs(a) + abs(b)) / 2;
+    pows = (pow(a, 2) + pow(b, 2));
+    abss = (abs(a) + abs(b));
     res = pows + abss;
     printf("%d\n", res);
     return 0;
