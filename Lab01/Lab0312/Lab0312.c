@@ -1,4 +1,4 @@
-#include <stdio.h>//тут зроблено 5, треба 12
+#include <stdio.h>
 #include <math.h>
 float PI = 3.14;
 
