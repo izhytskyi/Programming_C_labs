@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-double PI = 3.14;
 
 int main()
 {
@@ -13,6 +12,3 @@ int main()
 	printf("%.2f\n%.2f", z1,z2);
 	return 0;
 }
-
-//done
-
