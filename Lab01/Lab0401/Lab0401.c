@@ -2,7 +2,14 @@
 
 int main()
 {
-	//
+	float p1, p2, p3 = 0;
+	printf("Enter p1: ");
+	scanf("%f", &p1);
+	printf("Enter p2: ");
+	scanf("%f", &p2);
+	printf("Enter p3: ");
+	scanf("%f", &p3);
+	printf("P1: %.2f, P2: %.2f, P3: .2f", p1, p2-p1, p3-p2-p1);
 	return 0;
 }
 
