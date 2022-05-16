@@ -20,13 +20,13 @@ int main()
                 scanf("%d", &a[i][j]);
             }
         }
-        int max_m, max_n = 0;
-    for (i = 0; i < m; i++)
-        for (j = 0; j < n; j++)
-            if (a[i][j] > a[max_m][max_n])
-            {
-                max_m = i; max_n = j; 
-            }
+int max_i = 0, max_j = 0;
+ for (int i = 0; i < m; i++)
+  for (int j = 0; j < n; j++)
+   if (a[i][j] > a[max_i][max_j])
+   {
+    max_i = i; max_j = j; 
+   }
     printf("\n");
     for (i = 0; i < m; i++)
     {
@@ -36,8 +36,8 @@ int main()
         }
         printf("\n");
     }
-    printf("\nMax element = %d", a[max_m][max_n]);
-    printf("\nPosition of max element = string #%d", max_m+1);
+    printf("\nMax element = %d", a[max_i][max_j]);
+    printf("\nPosition of max element = string #%d", max_i+1);
     for (i = 0; i < m; i++)
     {
         free(a[i]);
