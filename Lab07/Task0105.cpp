@@ -56,4 +56,5 @@ int GCD(int min, int max)
         min = mod;
  
         GCD(min, max);
+        return 0;
 }
