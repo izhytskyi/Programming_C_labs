@@ -6,12 +6,12 @@ int lab010104(int a, int b);
 float lab010312(float AB, float BC, float AC);
 float lab020211(float x);
 char* lab020511(int a);
-
+void lab030113(float *pa, float *pb);
 
 
 int main()
 {
-    //lab01 0104
+    //Lab01 0104
     int a = 0;
     int b = 0;
     int pows, abss, res = 0;
@@ -41,7 +41,14 @@ int main()
 	scanf("%d", &n);
 	char* res0511 = lab020511(n);
 	puts(res0511);
-	//
+	//Lab03 0113
+    float a1, b1 = 0;
+    printf("\nLab03. Task0113.\nEnter a: ");
+    scanf("%f", &a1);
+    printf("Enter b: ");
+    scanf("%f", &b1);
+    lab030113(&a1, &b1);
+    printf("\na = %f\nb = %f\n", a1, b1);
     return 0;
 }
 
@@ -96,4 +103,10 @@ char* lab020511(int a)
 			return months[i];
 		}
 	}
+}
+
+void lab030113(float *pa, float *pb)
+{
+    *pa = *pa * 2;
+    *pb = *pb / 2;
 }
