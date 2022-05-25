@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
 
 int lab010104(int a, int b);
 float lab010312(float AB, float BC, float AC);
 float lab020211(float x);
+char* lab020511(int a);
+
 
 
 int main()
@@ -32,6 +35,13 @@ int main()
     scanf("%f", &x);
     float result = lab020211(x);
     printf("Result = %.2f", result);
+    //Lab02 0511
+	int n = 0;
+	printf("\nLab02. Task 0511.\nEnter a number:\n");
+	scanf("%d", &n);
+	char* res0511 = lab020511(n);
+	puts(res0511);
+	//
     return 0;
 }
 
@@ -63,4 +73,27 @@ float lab020211(float x)
     result = 1/(pow(x,2) - 2*x - 10);
     }
     return result;
+}
+
+char* lab020511(int a)
+{
+	char *months[13];
+	months[0] = "zero :)";
+	months[1] = "January";
+	months[2] = "February";
+	months[3] = "March";
+	months[4] = "April";
+	months[5] = "May";
+	months[6] = "June";
+	months[7] = "July";
+	months[8] = "August";
+	months[9] = "September";
+	months[10] = "October";
+	months[11] = "November";
+	months[12] = "December";
+	for(int i = 0; i < 13; i++){
+		if(i == a){
+			return months[i];
+		}
+	}
 }
