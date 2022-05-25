@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
+#include <stdlib.h>
 
 int lab010104(int a, int b);
 float lab010312(float AB, float BC, float AC);
